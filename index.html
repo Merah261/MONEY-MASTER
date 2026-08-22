@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#19b84a">
+    <meta name="description" content="Money Master - Le jeu ultime de l'argent">
+
+    <title>Money Master</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Falling money -->
+    <div id="moneyRain"></div>
+
+    <!-- =========================
+         HOME SCREEN
+    ========================== -->
+    <main id="homeScreen" class="screen home-screen">
+
+        <div class="top-glow"></div>
+
+        <header class="logo-area">
+            <div class="crown">♛</div>
+
+            <h1>
+                <span>MONEY</span>
+                <strong>MASTER</strong>
+            </h1>
+
+            <p>L'argent tombe, les légendes le ramassent.</p>
+        </header>
+
+
+        <!-- Character -->
+        <section class="character-card">
+
+            <div class="card-shine"></div>
+
+            <img
+                src="assets/character.png"
+                alt="Money Master"
+                class="character-image"
+            >
+
+        </section>
+
+
+        <!-- Play button -->
+        <button id="playButton" class="play-button">
+            <span>JOUER</span>
+            <b>➜</b>
+        </button>
+
+
+        <div class="features">
+
+            <div class="feature">
+                <span>💵</span>
+                <small>100%</small>
+                <p>Gratuit</p>
+            </div>
+
+            <div class="feature">
+                <span>🏆</span>
+                <small>TOP</small>
+                <p>Deviens le meilleur</p>
+            </div>
+
+            <div class="feature">
+                <span>⚡</span>
+                <small>RAPIDE</small>
+                <p>Fun & addictif</p>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- =========================
+         LOADING SCREEN
+    ========================== -->
+    <main id="loadingScreen" class="screen loading-screen hidden">
+
+        <div class="loading-circle"></div>
+
+        <div class="loading-content">
+
+            <div class="mini-character">
+
+                <img
+                    src="assets/character.png"
+                    alt="Money Master"
+                >
+
+            </div>
+
+            <h2>CHARGEMENT<span class="dots">...</span></h2>
+
+            <p id="loadingMessage">
+                Préparation de votre fortune
+            </p>
+
+
+            <div class="progress-container">
+
+                <div
+                    id="progressBar"
+                    class="progress-bar"
+                ></div>
+
+            </div>
+
+            <div class="progress-info">
+
+                <span>Chargement</span>
+
+                <strong id="progressText">
+                    0%
+                </strong>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
